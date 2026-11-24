@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Quiz | VidyaSetu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="class8-quiz-page">
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">📚 VidyaSetu</a>
+            <a href="class8-lesson.html" class="c8-quiz-back">← Back to Lesson</a>
+        </div>
+    </nav>
+
+    <main class="c8-quiz-container">
+
+        <section class="c8-quiz-hero">
+            <span class="c8-quiz-label">CLASS 8 · MATHEMATICS</span>
+            <h1 id="c8QuizTitle">Quiz & Assessment</h1>
+            <p id="c8QuizSubtitle">Test your understanding of Linear Equations!</p>
+
+            <div class="c8-quiz-language">
+                <button class="c8-quiz-language-btn active" data-language="en">English</button>
+                <button class="c8-quiz-language-btn" data-language="kn">ಕನ್ನಡ</button>
+            </div>
+        </section>
+
+        <section class="c8-quiz-card">
+
+            <div class="c8-quiz-top">
+                <div>
+                    <span id="c8QuizQuestionLabel">QUESTION</span>
+                    <strong id="c8QuizCounter">1 / 10</strong>
+                </div>
+                <div>
+                    <span id="c8QuizScoreLabel">YOUR SCORE</span>
+                    <strong id="c8QuizScore">0</strong>
+                </div>
+            </div>
+
+            <div class="c8-quiz-progress-track">
+                <div id="c8QuizProgress"></div>
+            </div>
+
+            <div class="c8-quiz-question-area">
+                <span id="c8QuizDifficulty" class="c8-quiz-difficulty">EASY</span>
+                <h2 id="c8QuizQuestion">Loading question...</h2>
+                <div id="c8QuizEquation" class="c8-quiz-equation"></div>
+            </div>
+
+            <div id="c8QuizOptions" class="c8-quiz-options"></div>
+
+            <div id="c8QuizFeedback" class="c8-quiz-feedback" aria-live="polite"></div>
+
+            <button id="c8QuizNext" class="c8-quiz-next" disabled>
+                Next Question →
+            </button>
+
+        </section>
+
+        <section id="c8QuizResult" class="c8-quiz-result" hidden>
+            <div class="c8-quiz-result-icon">🏆</div>
+            <h2 id="c8QuizResultHeading">Quiz Completed!</h2>
+            <p id="c8QuizResultDescription"></p>
+            <div class="c8-quiz-final-score">
+                <span id="c8QuizFinalScoreLabel">Your Score</span>
+                <strong id="c8QuizFinalScore">0 / 10</strong>
+            </div>
+            <p id="c8QuizResultMessage"></p>
+            <button id="c8QuizRetry" class="c8-quiz-retry">Try Again ↻</button>
+        </section>
+
+        <section class="c8-quiz-teacher">
+            <span>👩‍🏫</span>
+            <div>
+                <h3 id="c8QuizTeacherHeading">Teacher's Corner</h3>
+                <p id="c8QuizTeacherText">
+                    Encourage students to solve each equation step by step.
+                    Ask them to explain why the same operation must be applied
+                    to both sides of an equation.
+                </p>
+            </div>
+        </section>
+
+        <div class="c8-quiz-navigation">
+            <a href="class8-lesson.html">← Back to Lesson</a>
+            <a href="class8-activities.html">Practise Activities →</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 VidyaSetu – Bridging Minds, Empowering All</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

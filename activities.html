@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play interactive Mathematics activities with VidyaSetu.">
+    <title>Interactive Activities | VidyaSetu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="activities-page">
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📖</span>
+                <span class="logo-text">
+                    <strong>VidyaSetu</strong>
+                    <small>Bridging Minds, Empowering All</small>
+                </span>
+            </a>
+
+            <a href="lesson.html" class="back-home">← Back to Lesson</a>
+        </div>
+    </header>
+
+    <main class="activities-container">
+
+        <section class="activities-hero">
+            <span class="eyebrow">STEP 4 · LEARN BY DOING</span>
+            <h1>Let's <span>Play & Learn!</span></h1>
+            <p>
+                Choose an activity and solve it together.
+                Teachers can display these activities for the whole classroom.
+            </p>
+            <div class="activity-context" id="activityContext">
+                Class 3 · Mathematics
+            </div>
+        </section>
+
+        <section class="activity-picker-section">
+
+            <div class="activity-section-heading">
+                <div>
+                    <span class="subject-category">INTERACTIVE LEARNING</span>
+                    <h2>Choose an Activity</h2>
+                </div>
+            </div>
+
+            <div class="activity-picker-grid">
+
+                <button class="activity-choice active" data-activity="matching">
+                    <span class="activity-choice-icon">🔗</span>
+                    <strong>Match the Pairs</strong>
+                    <small>Connect numbers with quantities</small>
+                </button>
+
+                <button class="activity-choice" data-activity="picture">
+                    <span class="activity-choice-icon">🖼️</span>
+                    <strong>Identify the Picture</strong>
+                    <small>Look carefully and choose</small>
+                </button>
+
+                <button class="activity-choice" data-activity="quiz">
+                    <span class="activity-choice-icon">🧠</span>
+                    <strong>Choose the Answer</strong>
+                    <small>Test your Mathematics skills</small>
+                </button>
+
+                <button class="activity-choice" data-activity="sorting">
+                    <span class="activity-choice-icon">🔢</span>
+                    <strong>Sort the Numbers</strong>
+                    <small>Group odd and even numbers</small>
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="activity-workspace" id="activityWorkspace">
+
+            <div class="activity-workspace-header">
+                <div>
+                    <span class="activity-kicker">YOUR ACTIVITY</span>
+                    <h2 id="activityTitle">Match the Pairs</h2>
+                    <p id="activityInstructions">
+                        Select a number and then select the matching quantity.
+                    </p>
+                </div>
+
+                <button class="activity-reset-button" id="resetActivity">
+                    ↻ Restart
+                </button>
+            </div>
+
+            <div class="activity-progress-area">
+                <span id="activityProgressText">0 of 4 pairs matched</span>
+                <div class="activity-progress-track">
+                    <div class="activity-progress-fill" id="activityProgressFill"></div>
+                </div>
+            </div>
+
+            <div id="activityGameArea" class="activity-game-area">
+                <!-- Activity is generated here -->
+            </div>
+
+            <div class="activity-feedback" id="activityFeedback" aria-live="polite">
+                Select an answer to get started!
+            </div>
+
+        </section>
+
+        <section class="activity-teacher-note">
+            <span>👩‍🏫</span>
+            <div>
+                <strong>Teacher's Corner</strong>
+                <p>
+                    Encourage children to discuss their answers.
+                    Let different children take turns selecting options on the shared screen.
+                </p>
+            </div>
+        </section>
+
+        <div class="activities-bottom-actions">
+            <a href="lesson.html" class="activity-secondary-link">← Return to Lesson</a>
+            <a href="resources.html" class="activity-primary-link">Classroom Resources →</a>
+        </div>
+
+    </main>
+
+    <footer class="selection-footer">
+        <p>© 2026 VidyaSetu. Bridging Minds, Empowering All.</p>
+    </footer>
+
+</body>
+</html>

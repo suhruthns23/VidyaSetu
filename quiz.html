@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VidyaSetu classroom quiz and assessment">
+    <title>Classroom Quiz | VidyaSetu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="quiz-page">
+
+    <header class="selection-navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">📖</span>
+            <span>
+                <strong>VidyaSetu</strong>
+                <small>Bridging Minds, Empowering All</small>
+            </span>
+        </a>
+
+        <a href="resources.html" class="back-home">← Back to Resources</a>
+    </header>
+
+    <main class="quiz-container">
+
+        <section class="quiz-hero">
+            <span class="quiz-hero-icon">🧠</span>
+            <p class="quiz-eyebrow">CLASSROOM ASSESSMENT</p>
+            <h1>Let's Check What We Learned!</h1>
+            <p>Think carefully, choose your answer, and learn together.</p>
+
+            <div class="quiz-language">
+                <button class="quiz-language-button active" data-quiz-language="en">
+                    English
+                </button>
+                <button class="quiz-language-button" data-quiz-language="kn">
+                    ಕನ್ನಡ
+                </button>
+            </div>
+        </section>
+
+        <section class="quiz-instructions" id="quizInstructions">
+            <div class="quiz-instruction-icon">💡</div>
+            <div>
+                <h2>How to Play</h2>
+                <p>
+                    Read each question aloud, discuss it as a class,
+                    and select the correct answer together.
+                </p>
+            </div>
+        </section>
+
+        <section class="quiz-card" id="quizCard">
+
+            <div class="quiz-top-row">
+                <span id="quizQuestionCount">Question 1 of 10</span>
+                <span id="quizScore">Score: 0</span>
+            </div>
+
+            <div class="quiz-progress-track">
+                <div class="quiz-progress-bar" id="quizProgressBar"></div>
+            </div>
+
+            <p class="quiz-topic-label" id="quizTopic">Numbers Around Us</p>
+
+            <h2 id="quizQuestion">Question will appear here</h2>
+
+            <div class="quiz-options" id="quizOptions"></div>
+
+            <div class="quiz-answer-feedback" id="quizFeedback" aria-live="polite"></div>
+
+            <button class="quiz-next-button" id="quizNextButton" disabled>
+                Next Question →
+            </button>
+
+        </section>
+
+        <section class="quiz-result-card" id="quizResult" hidden>
+
+            <div class="quiz-result-icon" id="quizResultIcon">🏆</div>
+
+            <p class="quiz-eyebrow">QUIZ COMPLETED</p>
+
+            <h2 id="quizResultTitle">Well Done!</h2>
+
+            <div class="quiz-final-score">
+                <strong id="quizFinalScore">0/10</strong>
+                <span>Your Score</span>
+            </div>
+
+            <p id="quizResultMessage"></p>
+
+            <div class="quiz-result-details">
+                <div>
+                    <strong id="quizCorrectCount">0</strong>
+                    <span>Correct</span>
+                </div>
+                <div>
+                    <strong id="quizWrongCount">0</strong>
+                    <span>Incorrect</span>
+                </div>
+            </div>
+
+            <button class="quiz-restart-button" id="quizRestartButton">
+                ↻ Try Again
+            </button>
+
+            <a href="resources.html" class="quiz-home-link">
+                Back to Classroom Resources
+            </a>
+
+        </section>
+
+        <section class="quiz-teacher-note">
+            <span>👩‍🏫</span>
+            <div>
+                <strong>Teacher's Note</strong>
+                <p>
+                    Encourage children to discuss their answers.
+                    The purpose is to make learning enjoyable,
+                    not to create competition.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="selection-footer">
+        <p>© 2026 VidyaSetu. Bridging Minds, Empowering All.</p>
+    </footer>
+
+</body>
+</html>

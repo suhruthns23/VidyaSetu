@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class 8 Activities | VidyaSetu</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="class8-activities-page">
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <span>📖</span>
+                <div>
+                    <strong>VidyaSetu</strong>
+                    <small>Bridging Minds, Empowering All</small>
+                </div>
+            </a>
+
+            <a href="class8-lesson.html" class="back-home">
+                ← Back to Lesson
+            </a>
+
+        </div>
+    </nav>
+
+
+    <main class="c8-activities-container">
+
+        <section class="c8-activities-hero">
+
+            <span>CLASS 8 • MATHEMATICS</span>
+
+            <h1 id="c8ActivitiesTitle">
+                Let's Practise Linear Equations!
+            </h1>
+
+            <p id="c8ActivitiesSubtitle">
+                Solve challenges, balance equations and discover
+                how much you have learned.
+            </p>
+
+            <div class="c8-activity-language">
+
+                <button class="c8-activity-language-btn active"
+                    data-language="en">
+                    English
+                </button>
+
+                <button class="c8-activity-language-btn"
+                    data-language="kn">
+                    ಕನ್ನಡ
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTIVITY SELECTOR -->
+
+        <section class="c8-activity-selector">
+
+            <button class="c8-activity-tab active"
+                data-activity="balance">
+                ⚖️ <span id="c8TabBalance">Balance the Equation</span>
+            </button>
+
+            <button class="c8-activity-tab"
+                data-activity="unknown">
+                🔍 <span id="c8TabUnknown">Find the Unknown</span>
+            </button>
+
+            <button class="c8-activity-tab"
+                data-activity="steps">
+                🧮 <span id="c8TabSteps">Choose the Correct Step</span>
+            </button>
+
+        </section>
+
+
+        <!-- ACTIVITY WORKSPACE -->
+
+        <section class="c8-activity-workspace">
+
+            <div class="c8-activity-top">
+
+                <div>
+                    <span id="c8ActivityType">ACTIVITY 01</span>
+                    <h2 id="c8ActivityHeading">
+                        Balance the Equation
+                    </h2>
+                </div>
+
+                <button id="c8ActivityReset">
+                    ↻ <span id="c8ResetText">Restart</span>
+                </button>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="c8-activity-progress-info">
+
+                <span id="c8QuestionCounter">Question 1 of 3</span>
+
+                <span id="c8ScoreDisplay">Score: 0</span>
+
+            </div>
+
+            <div class="c8-activity-progress-track">
+                <div id="c8ActivityProgress"></div>
+            </div>
+
+
+            <!-- QUESTION -->
+
+            <div class="c8-activity-question-area">
+
+                <p id="c8ActivityInstruction">
+                    What should we subtract from both sides
+                    to keep this equation balanced?
+                </p>
+
+                <div class="c8-activity-equation" id="c8ActivityEquation">
+                    x + 5 = 12
+                </div>
+
+                <div id="c8ActivityOptions"
+                    class="c8-activity-options">
+                </div>
+
+                <div id="c8ActivityFeedback"
+                    class="c8-activity-feedback"
+                    aria-live="polite">
+                </div>
+
+                <button id="c8ActivityNext" disabled>
+                    Next Question →
+                </button>
+
+            </div>
+
+
+            <!-- FINAL RESULT -->
+
+            <div id="c8ActivityResult" class="c8-activity-result"
+                style="display:none;">
+
+                <div class="c8-result-emoji">🏆</div>
+
+                <h2 id="c8ResultHeading">Excellent Work!</h2>
+
+                <p id="c8ResultDescription">
+                    You have completed the activity.
+                </p>
+
+                <div class="c8-result-score" id="c8ResultScore">
+                    3 / 3
+                </div>
+
+                <button id="c8PlayAgain">
+                    Play Again
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEACHER NOTE -->
+
+        <section class="c8-activity-teacher-note">
+
+            <span>👩‍🏫</span>
+
+            <div>
+                <strong id="c8ActivityTeacherHeading">
+                    Teacher's Tip
+                </strong>
+
+                <p id="c8ActivityTeacherText">
+                    Encourage children to discuss their answers
+                    before selecting an option. Let different
+                    students explain their reasoning aloud.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM NAVIGATION -->
+
+        <div class="c8-activity-bottom">
+
+            <a href="class8-lesson.html">
+                ← Return to Lesson
+            </a>
+
+            <a href="class8-quiz.html">
+                Continue to Quiz →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer class="selection-footer">
+        <p>© 2026 VidyaSetu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
